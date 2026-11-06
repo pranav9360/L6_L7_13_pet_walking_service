@@ -1,0 +1,71 @@
+Final line coverage
+Working directory: C:\Users\prana\Documents\Codex\2026-11-06\lab-6-code-coverage-and-branch\L6_L7_13_pet_walking_service\Lab 6
+Python: 3.12.4
+Coverage scope: pet_walking_service only; no excluded lines or branches.
+Equivalent portable setup: coverage run --source=pet_walking_service [--branch] -m pytest <file> -v
+COVERAGE_RCFILE points to [run] source = pet_walking_service; [report] exclude_lines is empty.
+PYTEST_ADDOPTS=-p no:cacheprovider; COVERAGE_FILE is stored outside the repository.
+
+> coverage erase
+
+Exit code: 0
+
+> coverage run -m pytest CodeCoverageTest_139_application.py -v
+============================= test session starts =============================
+platform win32 -- Python 3.12.4, pytest-9.2.0, pluggy-1.7.0 -- C:\Users\prana\Documents\Codex\2026-11-06\lab-6-code-coverage-and-branch\work\venv\Scripts\python.exe
+rootdir: C:\Users\prana\Documents\Codex\2026-11-06\lab-6-code-coverage-and-branch\L6_L7_13_pet_walking_service\Lab 6
+collecting ... collected 42 items
+
+CodeCoverageTest_139_application.py::test_invalid_top_level_inputs[None-0] PASSED [  2%]
+CodeCoverageTest_139_application.py::test_invalid_top_level_inputs[routes1-0] PASSED [  4%]
+CodeCoverageTest_139_application.py::test_invalid_top_level_inputs[routes2-0] PASSED [  7%]
+CodeCoverageTest_139_application.py::test_invalid_top_level_inputs[routes-0] PASSED [  9%]
+CodeCoverageTest_139_application.py::test_invalid_top_level_inputs[routes4--0.01] PASSED [ 11%]
+CodeCoverageTest_139_application.py::test_each_session_base_fee[standard_60-40.0] PASSED [ 14%]
+CodeCoverageTest_139_application.py::test_each_session_base_fee[standard_30-27.0] PASSED [ 16%]
+CodeCoverageTest_139_application.py::test_each_session_base_fee[express_15-19.0] PASSED [ 19%]
+CodeCoverageTest_139_application.py::test_pet_count_boundary[1-27.0] PASSED [ 21%]
+CodeCoverageTest_139_application.py::test_pet_count_boundary[3-37.0] PASSED [ 23%]
+CodeCoverageTest_139_application.py::test_pet_count_boundary[4-48.6] PASSED [ 26%]
+CodeCoverageTest_139_application.py::test_pet_count_boundary[5-55.8] PASSED [ 28%]
+CodeCoverageTest_139_application.py::test_multiple_routes_walks_medication_weekend_and_rounding PASSED [ 30%]
+CodeCoverageTest_139_application.py::test_skips_unconfirmed_and_invalid_sessions PASSED [ 33%]
+CodeCoverageTest_139_application.py::test_nonpositive_and_missing_pet_counts_skip_medication PASSED [ 35%]
+CodeCoverageTest_139_application.py::test_short_aggressive_walk_can_still_charge_medication[standard_30] PASSED [ 38%]
+CodeCoverageTest_139_application.py::test_short_aggressive_walk_can_still_charge_medication[express_15] PASSED [ 40%]
+CodeCoverageTest_139_application.py::test_long_aggressive_walk_cancels_previous_earnings_and_breaks PASSED [ 42%]
+CodeCoverageTest_139_application.py::test_incident_threshold_and_status_precedence[4-ZERO_EARNINGS] PASSED [ 45%]
+CodeCoverageTest_139_application.py::test_incident_threshold_and_status_precedence[5-INCIDENT_AUDIT] PASSED [ 47%]
+CodeCoverageTest_139_application.py::test_audit_keeps_positive_revenue PASSED [ 50%]
+CodeCoverageTest_139_application.py::test_empty_or_skipped_work[routes0] PASSED [ 52%]
+CodeCoverageTest_139_application.py::test_empty_or_skipped_work[routes1] PASSED [ 54%]
+CodeCoverageTest_139_application.py::test_empty_or_skipped_work[routes2] PASSED [ 57%]
+CodeCoverageTest_139_application.py::test_empty_or_skipped_work[routes3] PASSED [ 59%]
+CodeCoverageTest_139_application.py::test_malformed_nested_inputs_propagate_native_errors[routes0-0-AttributeError] PASSED [ 61%]
+CodeCoverageTest_139_application.py::test_malformed_nested_inputs_propagate_native_errors[routes1-0-AttributeError] PASSED [ 64%]
+CodeCoverageTest_139_application.py::test_malformed_nested_inputs_propagate_native_errors[routes2-0-TypeError] PASSED [ 66%]
+CodeCoverageTest_139_application.py::test_malformed_nested_inputs_propagate_native_errors[routes3-0-TypeError] PASSED [ 69%]
+CodeCoverageTest_139_application.py::test_malformed_nested_inputs_propagate_native_errors[routes4-None-TypeError] PASSED [ 71%]
+CodeCoverageTest_139_application.py::test_gps_signals[matrix0-NO_DATA] PASSED [ 73%]
+CodeCoverageTest_139_application.py::test_gps_signals[None-NO_DATA] PASSED [ 76%]
+CodeCoverageTest_139_application.py::test_gps_signals[matrix2-ONLINE] PASSED [ 78%]
+CodeCoverageTest_139_application.py::test_gps_signals[matrix3-ONLINE] PASSED [ 80%]
+CodeCoverageTest_139_application.py::test_gps_signals[matrix4-ONLINE] PASSED [ 83%]
+CodeCoverageTest_139_application.py::test_gps_signals[matrix5-LOST_SIGNAL_ALERT] PASSED [ 85%]
+CodeCoverageTest_139_application.py::test_gps_signals[matrix6-ONLINE] PASSED [ 88%]
+CodeCoverageTest_139_application.py::test_gps_signals[matrix7-ONLINE] PASSED [ 90%]
+CodeCoverageTest_139_application.py::test_gps_signals[matrix8-LOST_SIGNAL_ALERT] PASSED [ 92%]
+CodeCoverageTest_139_application.py::test_malformed_gps_data_raises_type_error[matrix0] PASSED [ 95%]
+CodeCoverageTest_139_application.py::test_malformed_gps_data_raises_type_error[matrix1] PASSED [ 97%]
+CodeCoverageTest_139_application.py::test_malformed_gps_data_raises_type_error[matrix2] PASSED [100%]
+
+============================= 42 passed in 0.26s ==============================
+Exit code: 0
+
+> coverage report -m
+Name                     Stmts   Miss  Cover   Missing
+------------------------------------------------------
+pet_walking_service.py      57      0   100%
+------------------------------------------------------
+TOTAL                       57      0   100%
+Exit code: 0
