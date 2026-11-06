@@ -1,0 +1,92 @@
+Final branch coverage
+Working directory: C:\Users\prana\Documents\Codex\2026-11-06\lab-6-code-coverage-and-branch\L6_L7_13_pet_walking_service\Lab 6
+Python: 3.12.4
+Coverage scope: pet_walking_service only; no excluded lines or branches.
+Equivalent portable setup: coverage run --source=pet_walking_service [--branch] -m pytest <file> -v
+COVERAGE_RCFILE points to [run] source = pet_walking_service; [report] exclude_lines is empty.
+PYTEST_ADDOPTS=-p no:cacheprovider; COVERAGE_FILE is stored outside the repository.
+
+> coverage erase
+
+Exit code: 0
+
+> coverage run --branch -m pytest BranchCoverageTest_139_application.py -v
+============================= test session starts =============================
+platform win32 -- Python 3.12.4, pytest-9.2.0, pluggy-1.7.0 -- C:\Users\prana\Documents\Codex\2026-11-06\lab-6-code-coverage-and-branch\work\venv\Scripts\python.exe
+rootdir: C:\Users\prana\Documents\Codex\2026-11-06\lab-6-code-coverage-and-branch\L6_L7_13_pet_walking_service\Lab 6
+collecting ... collected 63 items
+
+BranchCoverageTest_139_application.py::test_validation_rejects_bad_routes_or_negative_fee[None--1] PASSED [  1%]
+BranchCoverageTest_139_application.py::test_validation_rejects_bad_routes_or_negative_fee[routes1-0] PASSED [  3%]
+BranchCoverageTest_139_application.py::test_validation_rejects_bad_routes_or_negative_fee[routes2-0] PASSED [  4%]
+BranchCoverageTest_139_application.py::test_validation_rejects_bad_routes_or_negative_fee[routes3--0.01] PASSED [  6%]
+BranchCoverageTest_139_application.py::test_route_and_walk_loops_zero_one_multiple[routes0-0.0] PASSED [  7%]
+BranchCoverageTest_139_application.py::test_route_and_walk_loops_zero_one_multiple[routes1-0.0] PASSED [  9%]
+BranchCoverageTest_139_application.py::test_route_and_walk_loops_zero_one_multiple[routes2-0.0] PASSED [ 11%]
+BranchCoverageTest_139_application.py::test_route_and_walk_loops_zero_one_multiple[routes3-0.0] PASSED [ 12%]
+BranchCoverageTest_139_application.py::test_route_and_walk_loops_zero_one_multiple[routes4-27.0] PASSED [ 14%]
+BranchCoverageTest_139_application.py::test_route_and_walk_loops_zero_one_multiple[routes5-96.0] PASSED [ 15%]
+BranchCoverageTest_139_application.py::test_session_chain_pet_boundary_and_medication[False-standard_60-3-50.0] PASSED [ 17%]
+BranchCoverageTest_139_application.py::test_session_chain_pet_boundary_and_medication[False-standard_60-4-60.3] PASSED [ 19%]
+BranchCoverageTest_139_application.py::test_session_chain_pet_boundary_and_medication[False-standard_30-3-37.0] PASSED [ 20%]
+BranchCoverageTest_139_application.py::test_session_chain_pet_boundary_and_medication[False-standard_30-4-48.6] PASSED [ 22%]
+BranchCoverageTest_139_application.py::test_session_chain_pet_boundary_and_medication[False-express_15-3-29.0] PASSED [ 23%]
+BranchCoverageTest_139_application.py::test_session_chain_pet_boundary_and_medication[False-express_15-4-41.4] PASSED [ 25%]
+BranchCoverageTest_139_application.py::test_session_chain_pet_boundary_and_medication[True-standard_60-3-50.0] PASSED [ 26%]
+BranchCoverageTest_139_application.py::test_session_chain_pet_boundary_and_medication[True-standard_60-4-60.3] PASSED [ 28%]
+BranchCoverageTest_139_application.py::test_session_chain_pet_boundary_and_medication[True-standard_30-3-37.0] PASSED [ 30%]
+BranchCoverageTest_139_application.py::test_session_chain_pet_boundary_and_medication[True-standard_30-4-48.6] PASSED [ 31%]
+BranchCoverageTest_139_application.py::test_session_chain_pet_boundary_and_medication[True-express_15-3-29.0] PASSED [ 33%]
+BranchCoverageTest_139_application.py::test_session_chain_pet_boundary_and_medication[True-express_15-4-41.4] PASSED [ 34%]
+BranchCoverageTest_139_application.py::test_invalid_session_skips_walks_and_weekend_fee[unknown] PASSED [ 36%]
+BranchCoverageTest_139_application.py::test_invalid_session_skips_walks_and_weekend_fee[] PASSED [ 38%]
+BranchCoverageTest_139_application.py::test_invalid_session_skips_walks_and_weekend_fee[None] PASSED [ 39%]
+BranchCoverageTest_139_application.py::test_invalid_pet_count_continues_to_next_walk[-1] PASSED [ 41%]
+BranchCoverageTest_139_application.py::test_invalid_pet_count_continues_to_next_walk[0] PASSED [ 42%]
+BranchCoverageTest_139_application.py::test_short_session_aggression_does_not_break[False-0.0-standard_30] PASSED [ 44%]
+BranchCoverageTest_139_application.py::test_short_session_aggression_does_not_break[False-0.0-express_15] PASSED [ 46%]
+BranchCoverageTest_139_application.py::test_short_session_aggression_does_not_break[True-6.0-standard_30] PASSED [ 47%]
+BranchCoverageTest_139_application.py::test_short_session_aggression_does_not_break[True-6.0-express_15] PASSED [ 49%]
+BranchCoverageTest_139_application.py::test_long_session_break_resets_earnings_but_weekend_still_applies[False-5-0.0] PASSED [ 50%]
+BranchCoverageTest_139_application.py::test_long_session_break_resets_earnings_but_weekend_still_applies[True-0-0.0] PASSED [ 52%]
+BranchCoverageTest_139_application.py::test_long_session_break_resets_earnings_but_weekend_still_applies[True-5-5.0] PASSED [ 53%]
+BranchCoverageTest_139_application.py::test_short_aggression_continues_and_route_incidents_accumulate PASSED [ 55%]
+BranchCoverageTest_139_application.py::test_audit_and_zero_revenue_decisions[False-0] PASSED [ 57%]
+BranchCoverageTest_139_application.py::test_audit_and_zero_revenue_decisions[False-4] PASSED [ 58%]
+BranchCoverageTest_139_application.py::test_audit_and_zero_revenue_decisions[False-5] PASSED [ 60%]
+BranchCoverageTest_139_application.py::test_audit_and_zero_revenue_decisions[True-0] PASSED [ 61%]
+BranchCoverageTest_139_application.py::test_audit_and_zero_revenue_decisions[True-4] PASSED [ 63%]
+BranchCoverageTest_139_application.py::test_audit_and_zero_revenue_decisions[True-5] PASSED [ 65%]
+BranchCoverageTest_139_application.py::test_empty_weekend_route_charges_transport_and_rounds PASSED [ 66%]
+BranchCoverageTest_139_application.py::test_native_exception_paths[routes0-0-AttributeError] PASSED [ 68%]
+BranchCoverageTest_139_application.py::test_native_exception_paths[routes1-0-AttributeError] PASSED [ 69%]
+BranchCoverageTest_139_application.py::test_native_exception_paths[routes2-0-TypeError] PASSED [ 71%]
+BranchCoverageTest_139_application.py::test_native_exception_paths[routes3-0-TypeError] PASSED [ 73%]
+BranchCoverageTest_139_application.py::test_native_exception_paths[routes4-0-TypeError] PASSED [ 74%]
+BranchCoverageTest_139_application.py::test_gps_threshold_streak_reset_and_nested_loop_outcomes[matrix0-NO_DATA] PASSED [ 76%]
+BranchCoverageTest_139_application.py::test_gps_threshold_streak_reset_and_nested_loop_outcomes[None-NO_DATA] PASSED [ 77%]
+BranchCoverageTest_139_application.py::test_gps_threshold_streak_reset_and_nested_loop_outcomes[matrix2-ONLINE] PASSED [ 79%]
+BranchCoverageTest_139_application.py::test_gps_threshold_streak_reset_and_nested_loop_outcomes[matrix3-ONLINE] PASSED [ 80%]
+BranchCoverageTest_139_application.py::test_gps_threshold_streak_reset_and_nested_loop_outcomes[matrix4-ONLINE] PASSED [ 82%]
+BranchCoverageTest_139_application.py::test_gps_threshold_streak_reset_and_nested_loop_outcomes[matrix5-ONLINE] PASSED [ 84%]
+BranchCoverageTest_139_application.py::test_gps_threshold_streak_reset_and_nested_loop_outcomes[matrix6-ONLINE] PASSED [ 85%]
+BranchCoverageTest_139_application.py::test_gps_threshold_streak_reset_and_nested_loop_outcomes[matrix7-ONLINE] PASSED [ 87%]
+BranchCoverageTest_139_application.py::test_gps_threshold_streak_reset_and_nested_loop_outcomes[matrix8-LOST_SIGNAL_ALERT] PASSED [ 88%]
+BranchCoverageTest_139_application.py::test_gps_threshold_streak_reset_and_nested_loop_outcomes[matrix9-LOST_SIGNAL_ALERT] PASSED [ 90%]
+BranchCoverageTest_139_application.py::test_gps_threshold_streak_reset_and_nested_loop_outcomes[matrix10-ONLINE] PASSED [ 92%]
+BranchCoverageTest_139_application.py::test_gps_threshold_streak_reset_and_nested_loop_outcomes[matrix11-LOST_SIGNAL_ALERT] PASSED [ 93%]
+BranchCoverageTest_139_application.py::test_gps_threshold_streak_reset_and_nested_loop_outcomes[matrix12-LOST_SIGNAL_ALERT] PASSED [ 95%]
+BranchCoverageTest_139_application.py::test_invalid_gps_elements[matrix0] PASSED [ 96%]
+BranchCoverageTest_139_application.py::test_invalid_gps_elements[matrix1] PASSED [ 98%]
+BranchCoverageTest_139_application.py::test_invalid_gps_elements[matrix2] PASSED [100%]
+
+============================= 63 passed in 0.32s ==============================
+Exit code: 0
+
+> coverage report -m
+Name                     Stmts   Miss Branch BrPart  Cover   Missing
+--------------------------------------------------------------------
+pet_walking_service.py      57      0     40      0   100%
+--------------------------------------------------------------------
+TOTAL                       57      0     40      0   100%
+Exit code: 0
